@@ -1,23 +1,39 @@
 # 100 Days of Code: The Complete Python Pro Bootcamp
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![Udemy](https://img.shields.io/badge/Udemy-A435F0?style=for-the-badge&logo=Udemy&logoColor=white)
 
-This repository contains my personal journey, projects, and notes for the **"100 Days of Code: The Complete Python Pro Bootcamp"** course on Udemy, instructed by the amazing Dr. Angela Yu.
+This repository documents my journey and progress through the **"100 Days of Code: The Complete Python Pro Bootcamp"** course on Udemy, instructed by Dr. Angela Yu. It contains all my daily projects, challenges, and notes, showcasing a progression from Python fundamentals to advanced applications.
 
 ---
 
-## About This Repository
+## Table of Contents
 
-The purpose of this repository is to document my daily progress, store all the code I write, and build a portfolio of projects. Each day of the course has its own dedicated folder, containing the relevant exercises, projects, and my personal notes. This serves as both a reference for myself and a showcase of the skills I'm acquiring.
+* [About This Course](#about-this-course)
+* [Daily Progress Log](#daily-progress-log)
+* [Key Learnings & Skills Gained](#key-learnings--skills-gained)
+* [Tools & Technologies](#tools--technologies)
+* [How to Run the Code](#how-to-run-the-code)
+* [Acknowledgements](#acknowledgements)
 
 ---
 
-## Course Outline & Daily Progress
+## About This Course
 
-Below is the structure of the course, with links to the work I've completed for each day.
+The "100 Days of Code" is an intensive, project-based Python bootcamp designed to take learners from beginner to professional developer. The curriculum is vast, covering everything from basic programming principles to complex applications in web development, data science, automation, and more. This repository serves as a personal log of my completed projects and a portfolio of the skills acquired throughout the course.
 
-*Note: The folder names are placeholders. I will update them to match my repository structure.*
+---
+
+## Daily Progress Log
+
+Below is the structure of the course, with links to the work I've completed for each day. Each folder contains the relevant project code and notes.
+
+*(This section can be updated daily as you complete each part of the course)*
 
 ### **Days 1-14: Python Basics & Console Applications**
 - **Day 1:** Variables & Printing
@@ -54,66 +70,78 @@ Below is the structure of the course, with links to the work I've completed for 
 - **Day 30:** Errors, Exceptions, and JSON Data
 - **Day 31:** Project: Flash Card App Capstone
 
-### **Days 32-44: APIs, Email/SMS & Web Scraping**
+### **Days 32-57: APIs, Web Scraping & Web Development with Flask**
 - **Day 32:** Send Email (smtplib) & Manage Dates (datetime)
-- **Day 33:** API Endpoints & API Parameters - ISS Overhead Notifier
+- **Day 33:** API Endpoints & Parameters - ISS Overhead Notifier
 - **Day 34:** API Practice - Creating a GUI Quiz App
 - **Day 35:** Keys, Authentication & Environment Variables
 - **Day 36:** Project: Stock Trading News Alert
 - **Day 37:** Project: Habit Tracking with Pixela
 - **Day 38:** Project: Workout Tracking using Google Sheets
-- **Day 39:** Project: Flight Deal Finder Capstone Part 1
-- **Day 40:** Project: Flight Deal Finder Capstone Part 2
-- **Days 41-44:** *Web Foundation (HTML & CSS)*
-
-### **Days 45-57: Web Development with Flask**
+- **Day 39-40:** Project: Flight Deal Finder Capstone
 - **Day 45:** Web Scraping with Beautiful Soup
 - **Day 46:** Project: Musical Time Machine
 - **Day 47:** Project: Automated Amazon Price Tracker
-- **Day 48:** Selenium Webdriver Browser and Game Playing Bot
-- **Day 49:** Automating Job Applications on LinkedIn
-- **Day 50:** Auto Tinder Swiping Bot
-- **Day 51:** Internet Speed Twitter Complaint Bot
-- **Day 52:** Instagram Follower Bot
-- **Day 53:** Web Scraping Capstone - Data Entry Job Automation
-- **Day 54:** Web Development with Flask
-- **Day 55:** HTML & URL Parsing in Flask and the Higher-Lower Game
-- **Day 56:** Rendering HTML/Static files and Using Website Templates
-- **Day 57:** Project: Templating with Jinja in a Flask Application
+- **Day 48:** Selenium Webdriver & Game Playing Bot
+- **Day 49-53:** Advanced Selenium Projects (LinkedIn, Tinder, Twitter bots)
+- **Day 54-57:** Web Development with Flask
 
-### **Days 58-80: Advanced Topics & Data Science**
-- **Day 58:** *Bootstrap*
-- **Day 59:** Project: Blog Capstone Project Part 2 - Adding Styling
-- **Day 60:** Project: POST Requests with Flask and HTML Forms
-- **Day 61:** Project: Building Advanced Forms with Flask-WTF
-- **Day 62:** Project: Cafe and Wifi Website
-- **Day 63:** Project: Databases with SQLite and SQLAlchemy
-- **Day 64:** Project: My Top 10 Movies Website
-- **Day 65:** *How to Create a Website that People will Love*
-- **Day 66:** Project: Building Your Own API with RESTful Routing
-- **Day 67:** Project: Blog Capstone Project Part 3 - RESTful Routing
-- **Day 68:** Project: Authentication with Flask
-- **Day 69:** Project: Blog Capstone Project Part 4 - Adding Users
-- **Day 70-80:** *Data Science & Machine Learning modules*
-
-### **Days 81-100: Portfolio Projects**
-- *This section will be updated with the advanced portfolio projects I build as I complete the course.*
+### **Days 58-100: Advanced Topics, Data Science & Portfolio Projects**
+- **Day 58-69:** Advanced Web Development (Bootstrap, WTForms, Databases, REST APIs)
+- **Day 70-80:** Data Science (Pandas, NumPy, Matplotlib, Seaborn)
+- **Day 81-100:** Advanced Portfolio Projects (To be updated)
 
 ---
 
-## Key Technologies & Skills
+## Key Learnings & Skills Gained
 
-Throughout this course, I will be working with a variety of technologies and developing a wide range of skills. Some of the key ones include:
+This bootcamp provides hands-on experience across the full spectrum of Python development. Key skills include:
 
-- **Languages:** Python, HTML5, CSS3, SQL
-- **Libraries & Frameworks:**
-  - **Web:** Flask, Selenium, Beautiful Soup
-  - **Data Science:** Pandas, NumPy, Matplotlib
-  - **GUI:** Tkinter, Turtle
-- **Tools & Platforms:** Git, GitHub, Command Line, PyCharm, APIs (REST), SQLite
+* **Core Python Proficiency:** Strong command of Python syntax, data structures, OOP, and error handling.
+* **Web Development:** Building and deploying web applications using Flask, HTML, CSS, and Bootstrap.
+* **Automation & Web Scraping:** Using Selenium, BeautifulSoup, and various APIs to automate tasks and gather data.
+* **Data Science & Analysis:** Processing, analyzing, and visualizing data with Pandas, NumPy, and Matplotlib.
+* **GUI Development:** Creating desktop applications with Tkinter.
+* **Professional Practices:** Working with REST APIs, sending automated emails/SMS, managing databases, and using Git for version control.
 
 ---
 
-## Acknowledgments
+## Tools & Technologies
+
+The primary tools and technologies utilized in this course and for this repository include:
+
+* **Languages:** Python, HTML5, CSS3, SQL
+* **Libraries & Frameworks:**
+    * **Web:** Flask, Selenium, BeautifulSoup, Requests
+    * **Data Science:** Pandas, NumPy, Matplotlib, Scikit-learn
+    * **GUI & Games:** Tkinter, Turtle, Pygame
+* **Databases:** SQLite
+* **APIs & Data Formats:** REST, JSON
+* **Development Tools:** Git, GitHub, PyCharm, Command Line
+
+---
+
+## How to Run the Code
+
+To run the code from a specific day:
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone [https://github.com/YourUsername/100-days-of-code.git](https://github.com/YourUsername/100-days-of-code.git)
+    cd 100-days-of-code
+    ```
+2.  **Navigate to a Specific Day's Folder:**
+    ```bash
+    cd day-01-printing/
+    ```
+3.  **Run the Python Script:**
+    ```bash
+    python main.py
+    ```
+    *Note: Many projects require external libraries. It is recommended to create a virtual environment and install dependencies from a `requirements.txt` file if one is provided in the project folder.*
+
+---
+
+## Acknowledgements
 
 A huge thank you to **Dr. Angela Yu** for creating such an engaging, comprehensive, and well-structured course. Her teaching style makes learning complex topics enjoyable and accessible.
