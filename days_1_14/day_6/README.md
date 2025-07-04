@@ -52,7 +52,7 @@ while something_is_true:
 
 ## 3. Reeborg's World: Hurdle Challenges
 
-The lessons of Day 6 are put into practice through a series of challenges in Reeborg's World, demonstrating the progression from simple loops to more complex, condition-driven logic.
+The lessons of Day 6 are put into practice through a series of challenges in Reeborg's World, demonstrating the progression from simple loops to more complex, condition-driven logic. The reference images for these exercises can be found inside the `02_reeborgs_world_exercises` folder.
 
 ### Exercise 1: Hurdle Race (Fixed)
 -   **Goal**: Guide Reeborg through a hurdle race where the number of hurdles is always the same.
