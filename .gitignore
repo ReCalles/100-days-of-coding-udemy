@@ -52,3 +52,4 @@ keys.py
 config.py
 secrets.py
 .env               # Common for environment variables
+*.pyc
