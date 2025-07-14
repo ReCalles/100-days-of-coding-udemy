@@ -1,4 +1,19 @@
-# Day 8: Caesar Cipher
+# Day 8: Functions with Inputs & The Caesar Cipher
+
+## Introduction to Day 8
+
+Day 8 delves into a fundamental concept in programming: **Functions with Inputs (Parameters and Arguments)**. We explore how to create more flexible and reusable blocks of code by passing data into functions, which is then applied in building a multi-stage programming project: the Caesar Cipher.
+
+## Concepts Learned:
+
+* **Functions with Inputs (`functions_and_inputs.py`):**
+    * Understanding how to define functions that accept specific pieces of information (parameters).
+    * Learning how to pass arguments (the actual values) into these functions when they are called.
+    * The benefits of using functions for code organization, reusability, and modularity.
+
+* **Positional vs. Keyword Arguments (`positional_vs_keyword_arguments.py`):**
+    * Distinguishing between positional arguments (where the order of arguments matters) and keyword arguments (where arguments are passed by name, making the order less critical and code more readable).
+    * Understanding when and why to use each type of argument in function calls.
 
 ## Project: Caesar Cipher
 
