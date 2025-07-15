@@ -1,126 +1,97 @@
 # Day 9: Dictionaries, Nesting, and the Blind Auction
 
-Day 9 introduces a new, powerful data structure in Python: the dictionary. We'll learn how to store data in key-value pairs, how to nest different data structures within each other, and apply these concepts to build a silent auction program.
+Day 9 introduces a new, powerful data structure in Python: the dictionary. On this day, we learned how to store data in key-value pairs, how to create more complex data structures by nesting lists and dictionaries, and finally, applied these concepts to build a fully functional silent auction program.
 
 ---
 
-## 1. Python Dictionaries
+## 1. Understanding Python Dictionaries
 
-A dictionary in Python is a data structure that allows us to associate a **key** to a **value**. This is incredibly useful for storing related pieces of information.
+A dictionary is a collection of data that stores information in **key-value pairs**. Unlike a list, which is ordered by index, a dictionary is unordered and uses a unique `key` to retrieve its corresponding `value`. This is incredibly useful for storing related pieces of information, like a user's profile or the properties of an object.
 
-### Dictionary Basics
+### Core Dictionary Operations
 
--   **Creating a dictionary:**
+-   **Creating a dictionary:** We define a dictionary using curly braces `{}` with `key: value` pairs separated by commas. Keys are typically strings or numbers.
+
     ```python
-    # An example dictionary
-    colours = {
-        "apple": "red",
-        "pear": "green",
-        "banana": "yellow"
+    # A dictionary mapping programming languages to their file extensions.
+    programming_languages = {
+      "Python": ".py",
+      "JavaScript": ".js",
+      "HTML": ".html",
     }
     ```
 
--   **Retrieving items from a dictionary:** You use the key to look up its associated value.
+-   **Retrieving a value:** To get a value, you provide its key inside square brackets `[]`.
+
     ```python
-    print(colours["pear"])
-    # Will print "green"
+    print(programming_languages["Python"])
+    # Output: .py
     ```
 
--   **Creating an empty dictionary:**
+-   **Adding and Editing Items:** You can add a new key-value pair or edit an existing one using a simple assignment. If the key exists, its value is updated; if it doesn't, the new pair is added.
+
     ```python
-    my_empty_dictionary = {}
+    # Adding a new item
+    programming_languages["Java"] = ".java"
+
+    # Editing an existing item
+    programming_languages["HTML"] = ".htm" # Changing the value
     ```
 
--   **Adding new items to a dictionary:**
-    ```python
-    colours["peach"] = "pink"
-    ```
+-   **Looping through a dictionary:** This is a common operation. We can iterate through the keys and use them to access the values.
 
--   **Editing an existing item:** You can change the value of an existing key by assigning a new value to it.
     ```python
-    colours["apple"] = "green"
-    ```
-
--   **Looping through a dictionary:**
-    ```python
-    # Loop through and print all the keys
-    for key in colours:
-        print(key)
-
-    # Loop through and print all the values
-    for key in colours:
-        print(colours[key])
+    # This loop prints both the key and its corresponding value.
+    for language in programming_languages:
+      extension = programming_languages[language]
+      print(f"The file extension for {language} is {extension}")
     ```
 
 ---
 
-## 2. Nesting Data Structures
+## 2. Nesting Lists and Dictionaries
 
-You can create complex data structures by nesting lists and dictionaries inside one another.
+A powerful feature of Python's data structures is the ability to **nest** them inside one another. This allows us to model complex, real-world data with more accuracy.
 
 ### Nesting a List inside a Dictionary
-A dictionary's value can be a list, allowing you to associate a key with multiple items.
+This is useful when a single key needs to be associated with multiple values. For example, a country can have many cities.
+
 ```python
+# A dictionary where the values are lists of cities.
 travel_log = {
-    "France": ["Paris", "Lille", "Dijon"],
-    "Germany": ["Stuttgart", "Berlin"],
+  "France": ["Paris", "Lille", "Dijon"],
+  "Germany": ["Berlin", "Hamburg", "Stuttgart"],
 }
 ```
-> #### PAUSE 1
-> See if you can figure out how to print out "Lille" from the nested List called `travel_log`.
-> > **Hint:** To get this part: `["Paris", "Lille", "Dijon"]` you would need: `travel_log["France"]`. Therefore to get Lille, you need: `travel_log["France"][1]`
-
-### Nesting Lists inside other Lists
-We've previously seen Nested Lists:
-```python
-nested_list = ["A", "B", ["C", "D"]]
-```
-> #### PAUSE 2
-> Do you remember how to get items that are nested deeply in a list? Try to print "D" from the list `nested_list`.
-> > **Hint:** To get this list: `["C", "D"]` we need the code: `nested_list[2]`. Therefore, to get "D" we need: `nested_list[2][1]`
+To access an item in the nested list, you first use the key to get the list, then use the index to get the item: `travel_log["France"][1]` would give you `"Lille"`.
 
 ### Nesting a Dictionary inside a Dictionary
-You can also nest a dictionary in a dictionary:
+This structure is perfect for when you need to store multiple attributes for each key.
+
 ```python
+# Storing more detailed travel information
 travel_log = {
-    "France": {
-        "cities_visited": ["Paris", "Lille", "Dijon"],
-        "total_visits": 12
-    },
-    "Germany": {
-        "cities_visited": ["Berlin", "Hamburg", "Stuttgart"],
-        "total_visits": 5
-    },
+  "France": {"cities_visited": ["Paris", "Lille"], "total_visits": 12},
+  "Germany": {"cities_visited": ["Berlin"], "total_visits": 5},
 }
 ```
-> #### PAUSE 3
-> Figure out how to print out "Stuttgart" from the following list.
-> > **Hint:** You would need to access the keys in sequence: `travel_log["Germany"]["cities_visited"][2]`
+Here, to get the list of cities visited in Germany, you would use two keys in sequence: `travel_log["Germany"]["cities_visited"]`.
 
 ---
 
-## 3. Project: Blind Auction
+## 3. Project: The Blind Auction
 
-The goal for Day 9 is to build a blind auction program where bidders can enter their names and bids secretly. The program then determines the highest bidder.
+The final project for Day 9 was to build a blind auction program. This project required us to use dictionaries to store data, loops to handle user input, and conditional logic to determine the winner.
 
-### Demo
-[Try the live demo here.](https://appbrewery.github.io/python-day9-demo/)
+### How It Works
+The program's logic was planned out using a flowchart to ensure all scenarios were covered. The core functionality is as follows:
 
-### Functionality
-- Each person writes their name and bid.
-- The program asks if there are others who need to bid. If so, then the computer clears the output (prints several blank lines) then loops back to asking for a name and bid.
-- Each person's name and bid are saved to a dictionary.
-- Once all participants have placed their bid, the program works out who has the highest bid and prints it.
+1.  **Collect Bids**: The program starts by asking for the first bidder's name and their bid amount. This information is stored in a dictionary, with the name as the key and the bid as the value (e.g., `{"Angela": 123}`).
 
-> **Hint:** Try writing out a flowchart to plan your program.
->
-> **Hint:** The values that come from the `input()` function are Strings, you'll need to use the `int()` function to convert it to a number.
->
-> **Hint:** There are several ways of clearing the output. The easiest is to simply print `"\n"` many times so that the output scrolls down many lines. e.g.
-> ```python
-> # This will add 20 new lines to the output
-> print("\n" * 20)
-> ```
+2.  **Handle Multiple Bidders**: A `while` loop is used to ask if there are any other bidders. If the user types 'yes', the screen is cleared to keep the next bid secret, and the program asks for the next name and bid. This continues until the user types 'no'.
 
-### Flowchart
-If you want to see an example flowchart, you can view it [here](https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Blind%20Auction%20Flow%20Chart#R3VnbcpswEP0aPzYDCLB5tHNrZ9pMpu6kzaMMilEDiBHyLV%2FfFYirHMdp7JD4JUGrXV3Ont2V5AE6j9fXHKfhDxaQaGAZwXqALgaWZRqmAf%2BkZFNIHM8qBHNOA6VUC6b0iZSWSrqgAclaioKxSNC0LfRZkhBftGSYc7Zqqz2wqD1riudEE0x9HOnS3zQQoZK6jl13fCV0HpZTm65X9MS41FZbyUIcsFVDhC4H6JwzJoqveH1OIoleCUxhd%2FVMb7UyThKxj8Hs4R5fx%2BMlu%2F52dxPepdM7H31BxShLHC3UjtVixaaEgASAiGoyLkI2ZwmOLmvphLNFEhA5jQGtWuc7YykITRD%2BJUJslHvxQjAQhSKOVG8xp5zo2b0pUcYW3Cc7NlSSBPM5ETv0rMoDwF3CYiL4Buw4ibCgy%2FY6sCLRvNKrYYYPhfQrUDc11Ke%2Fxj9%2FadDXwEqUViEVZJrifP8riLdtIC4JF2S9G0Z928rAHimuqmi1VXNVU99TorBBemQcCSfn1Nhp7clOu092Wjo7Q0hclhEBcDKJchbn6VWcpZsPx1mvZ84OT42z9p6cdfvkrK2hPs4e84LP4e8NjokcIUkXon%2FCOk6LsKajM9a0t1DWPhZlvVOjrLsnZUd9UtbdSdkJ2FrGLaew0Y%2FG2OpI2xtjTf0E9ckp%2B1YqKtNbRmHmynOO1fYcGnU8UoSIsuo4pVrG%2F%2FtppHM8COqEjJOgojqsQB4usLwsUl9QcESOAKwUIjmU6o9kUxnlQ54NLBfHkvDJLEsrh%2FQZKmh41gmWLQcSc%2BjoweIcLVhGfcQGWVPxR5nL7%2FuG%2FGLd6LjYlI0EdpubAISqed%2Fsq83yVml3wCg00Z6VwxweIl7HnONNQyGVcZg9H872yGxxy%2B5e%2BTv6yHN26cNHsYKDxnwFdi90Mxt0Uzw6CcI1noz6eLDQ34mKwwp9KLIzz9N5%2FpfJ5kCu141gR5MZNNy5%2FFpkhMtsvgplpl%2FhnKp51p%2FJEtBN3SGLZ4usp7RdVcqX0na3oh4Oc%2F2AeE8yDSbYtGjjgSM6T%2BDbh82DJ9BEQkN9HI1VR0yDoIg6ktEnPMuHksRW%2BQfGdSYD50KOBYGWFTF3IKiRZ7dzkmFrQG87S1pHw9nrtTxWOeo1BbKVrerk9Q75arhnvnrrC9b2gmZ1HnvQcL%2Fz7GsLbbdwOvbuQttd12v1zeE7FGZTf5o6jwjm1fk68zkhiZ6I3%2FkMjZzOK%2FSWVLztSe9ot80y9TSAu6L5LaTALYQ1kEyUdQyuMlVX%2ByqT2wTEj4pKCSpx%2B4azokkii2fPHnCGL3vA9LYUQ%2FdoLrA0F9ywT18LXdTB2dBxRoephdCsf2osMkr9iy26%2FAc%3D#%7B%22pageId%22%3A%22fezw1VAINj_9lBO2EaiH%22%7D).
+3.  **Find the Winner**: Once all bids are collected, the program iterates through the dictionary of bidders. It keeps track of the highest bid seen so far and the name of the person who made it.
+
+4.  **Announce the Result**: After checking all the bids, the program declares the winner by printing the name and bid amount of the person who bid the most.
+
+A key challenge in this project was remembering that the bid amount from an `input()` is a string. It needed to be converted to an integer using `int()` before it could be numerically compared to find the highest value.
