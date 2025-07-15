@@ -1,7 +1,6 @@
 ```
 # Day 8: Functions with Parameters & Caesar Cipher Project
 
-# Day 8: Function Parameters & The Caesar Cipher
 
 ### Functions with Inputs
 Day 8 expands on our knowledge of functions by introducing parameters, which allow us to pass data into our functions and make them much more flexible and powerful. We'll explore the difference between positional and keyword arguments and apply these concepts to build a classic cryptography program: the Caesar Cipher.
