@@ -3,7 +3,7 @@
 Day 8 expands on our knowledge of functions by introducing parameters, which allow us to pass data into our functions and make them much more flexible and powerful. We'll explore the difference between positional and keyword arguments and apply these concepts to build a classic cryptography program: the Caesar Cipher.
 
 
-### Functions with Inputs
+## Functions with Inputs
 
 Previously, we've seen that functions allow us to package code into a named block which can be used repeatedly at a later point.
 
@@ -34,7 +34,7 @@ The value of the input variable, e.g. `Angela` when you call the previous `greet
 
 ---
 
-### Functions with Multiple Inputs & Arguments
+## Functions with Multiple Inputs & Arguments
 
 #### Multiple Inputs
 You can have multiple inputs in functions. All you need to do is separate them with a comma `,`.
@@ -59,7 +59,7 @@ def greet_with(name, location):
     # What is it like in location
 ```
 
-#### Positional Arguments
+## Positional Arguments
 By default, when you create a function in Python, it will keep the order of arguments in the function definition.
 
 e.g. In the function below, the first argument that goes in will always be printed before the second one. `a = 2, b = 1`
