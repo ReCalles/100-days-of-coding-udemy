@@ -1,6 +1,5 @@
 # Day 8: Functions with Parameters & Caesar Cipher Project
 
-
 ### Functions with Inputs
 Day 8 expands on our knowledge of functions by introducing parameters, which allow us to pass data into our functions and make them much more flexible and powerful. We'll explore the difference between positional and keyword arguments and apply these concepts to build a classic cryptography program: the Caesar Cipher.
 
@@ -18,13 +17,15 @@ By adding a variable name inside the parentheses when we create (define) a new f
 On this day, we learned how to make our functions more dynamic by giving them inputs. By adding a variable name, called a **parameter**, inside the function's parentheses, we can pass in data when we call the function. This data, called an **argument**, allows the function to produce different results each time it's run.
 
 **Example:**
+```python
 # Creating the function
 def myFunction(input):
     print(f"Hey! {input}")
-
+```python
 # Using the function
 myFunction("Tommy")
 # Will output "Hey! Tommy"
+```
 
 #### Inputs are Variables
 When you create a function with inputs, you are defining a variable name that will be given to the data that is passed in.
@@ -37,6 +38,7 @@ The name of the input variable, e.g. `name` in this code here: `def greet(name):
 The value of the input variable, e.g. `Angela` when you call the previous `greet` function: `greet("Angela")` is called the **argument**.
 # "Angela" is the argument passed to the function
 greet("Angela")
+```
 
 ---
 
@@ -50,29 +52,35 @@ Create a function with multiple inputs.
 ## 2. Functions with Multiple Inputs
 
 > **Hint:**
+> ```python
 > def greet(name, greeting):
 >     print(f"{greeting} {name}")
 >
 > greet("Angela", "Yo!")
+> ```
 We also learned that functions are not limited to a single input. By separating variable names with commas in the function definition, we can create functions that accept multiple arguments.
 
 #### PAUSE 2
 Modify the function so that it prints the expected values.
 **Example:**
+```python
 def greet_with(name, location):
     # Expected output:
     # Hello name
     # What is it like in location
+```
     print(f"Hello, {name}")
     print(f"What is it like in {location}?")
 
 #### Positional Arguments
 By default, when you create a function in Python, it will keep the order of arguments in the function definition.
 greet_with("Ricardo", "Mexico")
+```
 
 e.g. In the function below, the first argument that goes in will always be printed before the second one. `a = 2, b = 1`
 ---
 
+```python
 def my_function(a, b):
     print(a)
     print(b)
@@ -81,6 +89,7 @@ my_function(2, 1)
 # It will print:
 # 2
 # 1
+```
 ## 3. Positional vs. Keyword Arguments
 
 #### Keyword Arguments
@@ -89,16 +98,22 @@ When using multiple inputs, it's important to understand how Python matches argu
 
 #### PAUSE 3
 Call the `greet_with()` function using keyword arguments.
-- **Positional Arguments**: This is the default behavior. The arguments are assigned to parameters based on their order. The first argument goes to the first parameter, the second to the second, and so on. The order matters.
-- **Keyword Arguments**: To make code clearer and avoid order-related bugs, we can explicitly assign an argument to a parameter by name. With keyword arguments, the order no longer matters.
+-   **Positional Arguments**: This is the default behavior. The arguments are assigned to parameters based on their order. The first argument goes to the first parameter, the second to the second, and so on. The order matters.
+-   **Keyword Arguments**: To make code clearer and avoid order-related bugs, we can explicitly assign an argument to a parameter by name. With keyword arguments, the order no longer matters.
 
 > **Hint:**
+> ```python
 > greet_with(location="London", name="Angela")
+> ```
 **Example:**
+```python
 # Using keyword arguments makes the code's intent very clear.
 greet_with(location="London", name="Angela")
+```
 
 ---
+
+
 
 ## Project: Caesar Cipher
 
