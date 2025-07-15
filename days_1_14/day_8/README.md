@@ -1,4 +1,3 @@
-```
 # Day 8: Functions with Parameters & Caesar Cipher Project
 
 
@@ -123,4 +122,3 @@ This project guides through the development of the Caesar Cipher, a classic subs
 ### Supporting Files:
 
 * `art.py`: This file contains the ASCII art logo that is displayed when the Caesar Cipher program runs, adding a visual element to the user experience.
-```
