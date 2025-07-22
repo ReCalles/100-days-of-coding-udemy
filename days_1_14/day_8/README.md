@@ -94,16 +94,16 @@ This project guides through the development of the Caesar Cipher, a classic subs
 
 ### Development Stages:
 
-* **Part 1: Basic Encryption & Decryption (`caesar_cipher_1.py`)**
+* **Part 1: Basic Encryption & Decryption (`03_1_caesar_cipher_1.py`)**
     * This initial stage focused on creating separate `encrypt()` and `decrypt()` functions to handle message encoding and decoding based on a given shift amount.
 
-* **Part 2: Combining Functions into One (`caesar_cipher_2.py`)**
+* **Part 2: Combining Functions into One (`03_2_caesar_cipher_2.py`)**
     * Here, we refactored the code to combine both the 'encrypt()' and 'decrypt()' logic into a single, versatile function named `caesar()`. This function now handles both encryption and decryption based on a 'direction' parameter.
 
-* **Part 3: Improving the User Experience (`caesar_cipher_3.py`)**
+* **Part 3: Improving the User Experience (`03_3_caesar_cipher_3.py`)**
     * This stage concentrated on enhancing the program's interaction with the user. It involved taking user input for the message, shift amount, and direction (encode/decode), and presenting the results clearly.
 
-* **Final Version: Refinements and Robustness (`caesar_cipher_final.py`)**
+* **Final Version: Refinements and Robustness (`04_caesar_cipher_final.py`)**
     * This is the polished version of the Caesar Cipher program. The code has been cleaned up for better readability and efficiency.
     * **Key improvement:** It now includes enhanced error handling for user input. If the user makes a typo or enters an incorrect command (anything other than 'encode' or 'decode') for the direction, the program will prompt them that the command is incorrect, guiding them to try again.
 
