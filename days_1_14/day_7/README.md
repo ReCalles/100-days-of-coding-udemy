@@ -54,7 +54,7 @@ Before writing the final code, the game's logic was mapped out using flowcharts.
 
 To keep the main game file (`06_final_code.py`) clean and organized, the game's assets were stored in separate Python files and used as modules. This is a practical application of the concepts learned in previous lessons.
 
--   **`hangman_words.py`**: This file acts as a module that provides the `word_list` variable. It is imported into the main script.
+-   **`hangman_words.py`**: This file acts as a module that provides the `word_list` variable. It is imported into the main script
 -   **`hangman_art.py`**: This module contains the `logo` and `stages` variables (ASCII art), which are also imported and used for the game's visual presentation.
 
 This separation of concerns makes the code easier to read, manage, and debug. The final, polished game is available in `06_final_code.py`.
