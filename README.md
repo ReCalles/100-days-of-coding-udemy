@@ -40,11 +40,11 @@ Below is the structure of the course, with links to the work I've completed for 
 - **Day 5:** Python Loops
 - **Day 6:** Python Functions & Karel
 - **Day 7:** Project: Hangman
-- **Day 8:** Function Parameters & Caesar Cipher
-- **Day 9:** Dictionaries & Nesting
-- **Day 10:** Functions with Outputs
+- **Day 8:** Function Parameters & Caesar Cipher Project
+- **Day 9:** Dictionaries & Nesting and Blind Auction Project
+- **Day 10:** Functions with Outputs and Calculator Project
 - **Day 11:** Project: The Blackjack Capstone
-- **Day 12:** Scope & Number Guessing Game
+- **Day 12:** Scope & Number Guessing Game Project
 - **Day 13:** Debugging
 - **Day 14:** Project: Higher Lower Game
 
