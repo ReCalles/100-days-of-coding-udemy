@@ -1,4 +1,4 @@
-```
+
 # Day 13: Mastering the Art of Debugging
 
 On Day 13, the focus shifted from learning new features to mastering one of the most critical skills for any developer: **debugging**. Writing code is only half the battle; finding and fixing bugs is the other half. This day was dedicated to a systematic approach to identifying, reproducing, and resolving errors in our programs.
@@ -61,4 +61,3 @@ While `print()` is useful, a real **debugger** is like `print()` on steroids. Mo
 -   **Step Into**: If the current line is a function call, this will move the debugger into that function so you can inspect its internal execution.
 
 -   **Exercise**: We used the PyCharm debugger to set a breakpoint and step through a faulty program line by line. This allowed us to watch the values of variables change in real-time and instantly spot where the logic went wrong.
-```
